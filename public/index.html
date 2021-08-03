@@ -18,7 +18,7 @@
         <!--navbar desktop-->
         <div class="navbar hidden md:flex md:flex-row flex-col justify-between conatiner md:mx-12 mx-4 p-2 md:p-6"> 
             <div class="cursor-pointer flex">
-                <button onclick="navblock()" class="cursor-pointer"><img src="./assets/nav.svg" alt="" class="md:hidden px-4 cursor-pointer" ></button>
+                <button  class="cursor-pointer"><img src="./assets/nav.svg" alt="" class="md:hidden px-4 cursor-pointer" ></button>
                 <img src="./assets/logo.svg" alt="" >
             </div>
             <div class="navblock md:flex md:flex-row justify-between font-normal text-base ">
@@ -33,27 +33,42 @@
         </div>
         <!--navbar mobile-->
               <div class="md:hidden">
-                <button class="accordion bg-gradient-to-r from-blue-600 to-blue-400 text-lg font-bold">Why NextPort ?</button>
-                <div class="panel">
-                    <ul>
-                        <li class="text-sm pb-4">
-                            Our Innovative Solution
+                <div class="head flex justify-between p-2" >
+                    <div class=" flex content-center" >
+                        <button id="navbtn">
+                            <img src="./assets/nav.svg" alt="" class="">
+                        </button>
+                    </div>
+                    <div class=" flex content-center">
+                        <img src="./assets/logo.svg" alt="" class="w-48">
+                    </div>
+                    <div class=" flex content-center">
+                        <div class="px-2 py-2 border-2 border-blue-400 rounded-lg text-blue-400" ><a href="#">Sign Up</a></div>
+                    </div>
+                </div>
+                <div class="body px-4 text-base hidden" id="body">
+                    <ul class="space-y-4">
+                        <li>
+                            Our Platform
                         </li>
-                        <li class="text-sm pb-4">
-                            Improve Customer <br> Experience
+                        <li>
+                            Pricing
                         </li>
-                        <li  class="text-sm pb-4">
-                            Enhance Productivity
+                        <li>
+                            Talk to sales
+                        </li>
+                        <li>
+                            Login
                         </li>
                     </ul>
                 </div>
               </div>
 
-        <div class="conatiner md:px-12 px-2 py-12">
+        <div class="conatiner md:px-12 px-4 py-12">
             <img src="./assets/dollar.svg" alt="" class="my-6 hidden md:flex">
             <h2 class="text-4xl font-bold mt-4">Pricing Information</h2>
             <h5 class="text-2xl mt-4 font-medium">How it works</h5>
-            <div class=" md:text-lg text-base mt-2 font-normal text-justify">
+            <div class=" md:text-lg text-base mt-2 font-normal text-left">
                 The price is per home built and we will space  platform per user until the warranty home period expires. For example if it takes you 10 months to build a brand new home and you offer a 3-year warranty:  you and your Customer will have access to the system  for 4 years. One year for the construction of the home plus three years for the warranty period.
             </div>
         </div>
@@ -268,8 +283,8 @@
                 <p class="text-sm">No credit card needed</p>
             </div>
             <div class="px-4 pt-8">
-                <div>                    
-                    <button class="accordion bg-gradient-to-r from-blue-600 to-blue-400 text-lg font-bold">Why NextPort ?</button>
+                <div class="divide-y divide-white">                    
+                    <button class="accordion border-b-2 border-white bg-gradient-to-r from-blue-600 to-blue-400 text-lg font-bold">Why NextPort ?</button>
                     <div class="panel">
                      <ul>
                         <li class="text-sm pb-4">
@@ -381,6 +396,13 @@
             </div>
         </div>
     </div>
-<script src="./script.js"></script>
+<script src="./script.js" type="text/javascript"></script>
+<script>
+ document.getElementById("navbtn").addEventListener("click", displayDate);
+
+function displayDate() {
+  console.log(Date());
+}
+</script>
 </body>
 </html>
