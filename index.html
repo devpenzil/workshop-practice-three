@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <title>Practice three</title>
 </head>
 <body>
@@ -34,21 +35,24 @@
                 <div class="flex space-x-7">
                     <div>
                         <!-- Website Logo -->
-                        <a href="#" class="flex items-center py-4 px-2">
-                            <img src="./assets/logo.svg" alt="Logo" class=" mr-2">
-                            
-                        </a>
+                        <div class="flex">
+                            <a href="#" class="flex items-center py-4  px-2">
+                                <img src="./assets/logo.svg" alt="Logo" class=" mr-2 w-36 md:w-auto">   
+                            </a>
+                            <a href="" class="py-2 px-2 font-medium text-blue-400 hover:text-white rounded hover:bg-blue-400 border-2 border-blue-400 transition duration-300 md:hidden w-24 my-2">Sign Up</a>
+                        </div>
                     </div>
                     <!-- Primary Navbar items -->
                     <div class="hidden md:flex items-center space-x-1">
-                        <a href="" class="py-4 px-2 text-gray-500  font-semibold text-xl">Our Services</a>
-                        <a href="" class="py-4 px-2 text-gray-500 font-semibold border-b-4 border-blue-500  text-xl">Pricing</a>
+                        <a href="" class="py-4 px-2 text-gray-500  font-semibold text-base">Our Services</a>
+                        <a href="" class="py-4 px-2 text-gray-500 font-semibold border-b-4 border-blue-500  text-base">Pricing</a>
                     </div>
                 </div>
                 <!-- Secondary Navbar items -->
                 <div class="hidden md:flex items-center space-x-3 ">
-                    <a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</a>
-                    <a href="" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</a>
+                    <a href="" class="py-2 px-2 font-medium text-gray-500 rounded  hover:text-blue-400 transition duration-300">Talk to sales</a>
+                    <a href="" class="py-2 px-2 font-medium text-gray-500 rounded  hover:text-blue-400 transition duration-300">Log In</a>
+                    <a href="" class="py-2 px-2 font-medium text-blue-400 hover:text-white rounded hover:bg-blue-400 border-2 border-blue-400 transition duration-300">Sign Up</a>
                 </div>
                 
             </div>
@@ -56,10 +60,10 @@
         <!-- mobile menu -->
         <div class="hidden mobile-menu">
             <ul class="">
-                <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
-                <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
-                <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
-                <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a></li>
+                <li class="active"><a href="index.html" class="block text-sm px-2 py-4   font-semibold">Home</a></li>
+                <li><a href="#services" class="block text-sm px-2 py-4  transition duration-300">Services</a></li>
+                <li><a href="#about" class="block text-sm px-2 py-4  transition duration-300">About</a></li>
+                <li><a href="#contact" class="block text-sm px-2 py-4  transition duration-300">Contact Us</a></li>
             </ul>
         </div>
         <script>
@@ -76,9 +80,9 @@
     <!-- Hero  -->
     <div class="conatiner md:px-12 px-4 py-12">
         <img src="./assets/dollar.svg" alt="" class="my-6 hidden md:flex">
-        <h2 class="text-4xl font-bold mt-4">Pricing Information</h2>
+        <h2 class="text-4xl md:text=6xl font-bold mt-4">Pricing Information</h2>
         <h5 class="text-2xl mt-4 font-medium">How it works</h5>
-        <div class=" md:text-lg text-base mt-2 font-normal text-left">
+        <div class=" md:text-lg md:text-base text-sm mt-2 font-normal text-left">
             The price is per home built and we will space platform per user until the warranty home period expires.
             For example if it takes you 10 months to build a brand new home and you offer a 3-year warranty: you and
             your Customer will have access to the system for 4 years. One year for the construction of the home plus
@@ -359,77 +363,82 @@
                 <p class="text-sm">No credit card needed</p>
             </div>
             <div class="px-4 pt-8">
-                <div class="divide-y divide-white">
-                    <button class="accordion border-b-2 border-white text-lg font-bold">Why NextPort ?</button>
-                    <div class="panel">
-                        <ul>
-                            <li class="text-sm pb-4">
-                                Our Innovative Solution
-                            </li>
-                            <li class="text-sm pb-4">
-                                Improve Customer <br> Experience
-                            </li>
-                            <li class="text-sm pb-4">
-                                Enhance Productivity
-                            </li>
-                        </ul>
+                <div class="w-full md:w-full mx-auto p-2">
+                    
+                    <div class="shadow-md">
+                       <div class="tab w-full overflow-hidden border-t">
+                          <input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
+                          <label class="block p-5 leading-normal cursor-pointer text-lg font-bold" for="tab-single-one">Why Newport ?</label>
+                          <div class="tab-content overflow-hidden border-l-2 bg-blue-400 border-indigo-500 leading-normal">
+                            <ul class="px-4 py-4">
+                                <li class="text-sm pb-4">
+                                    Our Innovative Solution
+                                </li>
+                                <li class="text-sm pb-4">
+                                    Improve Customer <br> Experience
+                                </li>
+                                <li class="text-sm pb-4">
+                                    Enhance Productivity
+                                </li>
+                            </ul>
+                          </div>
+                       </div>
+                       <div class="tab w-full overflow-hidden border-t">
+                        <input class="absolute opacity-0" id="tab-single-two" type="radio" name="tabs2">
+                        <label class="block p-5 leading-normal cursor-pointer text-lg font-bold" for="tab-single-two">Product</label>
+                        <div class="tab-content overflow-hidden border-l-2 bg-blue-400 border-indigo-500 leading-normal">
+                            <ul class="px-4 py-4">
+                                <li class="text-sm pb-4">
+                                    Features
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                     <div class="tab w-full overflow-hidden border-t">
+                        <input class="absolute opacity-0" id="tab-single-three" type="radio" name="tabs2">
+                        <label class="block p-5 leading-normal cursor-pointer text-lg font-bold" for="tab-single-three">Pricing</label>
+                        <div class="tab-content overflow-hidden border-l-2 bg-blue-400 border-indigo-500 leading-normal">
+                            <ul class="px-4 py-4">
+                                <li class="text-sm pb-4">
+                                    Plan
+                                </li>
+                                <li class="text-sm pb-4">
+                                    14 day free trial
+                                </li>
+                            </ul>
+                        </div>
+                     </div>
+                       <div class="tab w-full overflow-hidden border-t">
+                          <input class="absolute opacity-0" id="tab-single-four" type="radio" name="tabs2">
+                          <label class="block p-5 leading-normal cursor-pointer text-lg font-bold" for="tab-single-four">Resorces</label>
+                          <div class="tab-content overflow-hidden border-l-2 bg-blue-400 border-indigo-500 leading-normal">
+                            <ul class="px-4 py-4">
+                                <li class="text-sm pb-4">
+                                    Download App
+                                </li>
+                                <li class="text-sm pb-4">
+                                    Sales support
+                                </li>
+                                <li class="text-sm pb-4">
+                                    Integration & <br>
+                                    Partnership
+                                </li>
+                            </ul>
+                          </div>
+                       </div>
+                       <div class="tab w-full overflow-hidden border-t">
+                          <input class="absolute opacity-0" id="tab-single-five" type="radio" name="tabs2">
+                          <label class="block p-5 leading-normal cursor-pointer text-lg font-bold" for="tab-single-five">Company</label>
+                          <div class="tab-content overflow-hidden border-l-2 bg-blue-400 border-indigo-500 leading-normal">
+                            <ul class="px-4 py-4">
+                                <li class="text-sm pb-4">
+                                    About us
+                                </li>
+                            </ul>
+                          </div>
+                       </div>
                     </div>
-
-                    <button class="accordion  text-lg font-bold">Product</button>
-                    <div class="panel">
-                        <ul>
-
-                            <li class="text-sm pb-4">
-                                Features
-                            </li>
-
-
-                        </ul>
-                    </div>
-
-                    <button class="accordion  text-lg font-bold">Pricing</button>
-                    <div class="panel">
-                        <ul>
-
-                            <li class="text-sm pb-4">
-                                Plan
-                            </li>
-                            <li class="text-sm pb-4">
-                                14 day free trial
-                            </li>
-                        </ul>
-                    </div>
-
-                    <button class="accordion  text-lg font-bold">Resources</button>
-                    <div class="panel">
-                        <ul>
-
-                            <li class="text-sm pb-4">
-                                Download App
-                            </li>
-                            <li class="text-sm pb-4">
-                                Sales support
-                            </li>
-                            <li class="text-sm pb-4">
-                                Integration & <br>
-                                Partnership
-                            </li>
-                        </ul>
-                    </div>
-
-                    <button class="accordion border-b-2 border-white text-lg font-bold">Company</button>
-                    <div class="panel">
-                        <ul>
-
-                            <li class="text-sm pb-4">
-                                About us
-                            </li>
-
-
-                        </ul>
-                    </div>
-                </div>
-
+                 </div>
             </div>
         </div>
         <div class="container px-8 mt-12 mb-8">
@@ -477,5 +486,6 @@
         </div>
     </div>
     <!-- Footer close  -->
+    <script src="/script.js"></script>
 </body>
 </html>
